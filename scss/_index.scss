@@ -1,0 +1,178 @@
+.top {
+    background-color: #f9f9f9;
+    height: calc(100vh - #{$header-height});
+    position: relative;
+    &::after {
+        content: "";
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 0 calc(100vh - #{$header-height}) calc-vw(1066);
+        border-color: transparent transparent $primary-color transparent;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    &__inner {
+        padding: 101px 0;
+        display: grid;
+        grid-template-areas:
+            "title slide"
+            "catch slide"
+            "copy slide"
+            "scroll slide";
+        align-items: start;
+        justify-content: space-between;
+    }
+    &__title {
+        color: #fff;
+        font-size: 46px;
+        line-height: calc(66 / 46);
+        background-color: $primary-color;
+        width: fit-content;
+        padding: 16px 44px;
+        box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.12);
+        margin-bottom: calc(32px + 0.2em);
+        grid-area: title;
+    }
+    &__catch {
+        font-size: 40px;
+        line-height: calc(58 / 40);
+        margin-bottom: 25px;
+        grid-area: catch;
+    }
+    .dot {
+        padding-top: 0.2em;
+        background-position: top left -2px;
+        background-repeat: repeat-x;
+        background-size: 1.02em 0.2em;
+        background-image: radial-gradient(
+            0.1em 0.1em at center center,
+            $primary-color,
+            $primary-color 100%,
+            transparent
+        );
+    }
+    &__copy {
+        font-size: 18px;
+        margin-bottom: 33px;
+        grid-area: copy;
+    }
+    &__scroll {
+        background-color: $primary-color;
+        width: 62px;
+        height: 62px;
+        border-radius: 50%;
+        grid-area: scroll;
+        @include flex-center;
+        &::after {
+            content: "";
+            width: 10px;
+            height: 10px;
+            border-right: 2px solid #fff;
+            border-bottom: 2px solid #fff;
+            transform: rotate(45deg);
+        }
+    }
+    &__slide {
+        width: 395px;
+        box-shadow: 0px 3px 13px rgba(0, 0, 0, 0.19);
+        margin-right: 27px;
+        grid-area: slide;
+        @include aspect-ratio-parent {
+            padding-top: 88.8%;
+        }
+        .swiper-wrapper {
+            @include aspect-ratio-child;
+        }
+        .swiper-slide * {
+            width: 100% !important;
+            height: 100% !important;
+        }
+    }
+}
+// /.top
+
+.wish {
+    padding: 61px 0 132px;
+    &__title {
+        margin-bottom: 100px;
+    }
+    &__card-ul {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: repeat (2, auto);
+        justify-content: space-between;
+        row-gap: 37px;
+    }
+    &__card {
+        font-size: 18px;
+        width: 375px;
+        height: 177px;
+        box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.05);
+        position: relative;
+        @include flex-center;
+        &::before {
+            content: "";
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 47px 49px 0 0;
+            border-color: $primary-color transparent transparent transparent;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+}
+// /.wish
+
+.reasons {
+    &__inner {
+        padding: 63px 128px 69px 115px;
+    }
+    &__title {
+        margin-bottom: 95px;
+    }
+    &__card-area {
+        margin-bottom: 107px;
+    }
+    &__card-ul {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat (2, auto);
+        justify-content: space-between;
+        row-gap: 59px;
+    }
+    &__card {
+        text-align: center;
+        width: 439px;
+    }
+    &__card-icon {
+        background-color: #fff;
+        width: 240px;
+        height: 240px;
+        border-radius: 50%;
+        filter: drop-shadow(0px 3px 19px rgba(0, 0, 0, 0.18));
+        margin: 0 auto 30px;
+        @include flex-center;
+        img {
+            width: 130px;
+        }
+    }
+    &__card-title {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 0.5em;
+    }
+    &__card-body {
+        line-height: calc(32 / 16);
+    }
+    &__enquiry {
+        color: $letter-color;
+    }
+}
+// /.reasons
+
+.service {
+}

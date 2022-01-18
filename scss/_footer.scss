@@ -1,0 +1,63 @@
+.footer {
+    color: #fff;
+    background-color: #0c1b67;
+    &__enquiry {
+        background: no-repeat center/cover;
+        padding: 47px 0 53px;
+        margin-bottom: 32px;
+        position: relative;
+        &::before {
+            content: "";
+            background-color: rgba(121, 115, 204, 0.5);
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 0;
+        }
+    }
+    &__title,
+    &__copy,
+    &__button {
+        text-align: center;
+        letter-spacing: 0.07em;
+        position: relative;
+        z-index: 1;
+    }
+    &__title {
+        font-size: 53px;
+        font-weight: bold;
+        margin-bottom: 18px;
+    }
+    &__copy {
+        margin-bottom: 27px;
+    }
+    &__button {
+        color: $letter-color;
+        font-size: 20px;
+        width: 1050px;
+        padding: 59px 0;
+        &::before,
+        &::after {
+            right: 62px;
+        }
+    }
+    &__nav {
+        margin-bottom: 45px;
+    }
+    &__navUl {
+        display: grid;
+        grid-template-columns: repeat(5, auto);
+        justify-content: center;
+        align-items: center;
+        column-gap: 25px;
+    }
+    &__navItem {
+        font-weight: bold;
+    }
+    &__copyright {
+        text-align: center;
+        padding-bottom: 21px;
+    }
+}
