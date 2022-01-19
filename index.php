@@ -138,7 +138,7 @@
             <h4 class="service__category-name">Webサイト制作</h4>
             <dl class="service__category-dl">
                 <div class="service__item">
-                    <dt class="service__name">静的サイト制作</dt>
+                    <dt class="service__name">ホームページ制作（静的ページ）</dt>
                     <dd class="service__detail">
                         高品質なホームページを作成いたします。<br>
                         制作後の編集の必要がない方や、とりあえずホームページを作りたい方へ。
@@ -170,7 +170,7 @@
         </div>
         <!-- /.service__category -->
         <div class="service__category">
-            <h4 class="service__category-title">その他サービス</h4>
+            <h4 class="service__category-name">その他サービス</h4>
             <dl class="service__category-dl">
                 <div class="service__item">
                     <dt class="service__name">検索エンジン対策（内部SEO対策)</dt>
@@ -196,9 +196,9 @@
             <!-- /.service__category-dl -->
         </div>
         <!-- /.service__category -->
-        <a href="<?php home_url(); ?>/plans" class="button service__to-plans">料金とプランを確認する</a>
     </div>
     <!-- /.inner service__inner -->
+    <a href="<?php home_url(); ?>/plans" class="button service__to-plans">料金とプランを確認する</a>
 </section>
 <!-- /.service -->
 

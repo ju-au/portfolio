@@ -65,6 +65,10 @@ $break-points: (
   left: 0;
 }
 
+@function outside-inner-width($responsive) {
+  @return calc((100vw - #{map-get($inner-width, $responsive)}) / 2);
+}
+
 @function calc-vw($content-width, $display-width: 1440) {
   @return $content-width / $display-width * 100vw;
 }

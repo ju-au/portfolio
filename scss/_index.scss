@@ -175,4 +175,110 @@
 // /.reasons
 
 .service {
+    padding: 68px 0 127px;
+    &__title {
+        margin-bottom: 107px;
+    }
+    &__inner {
+        background: linear-gradient(
+            90deg,
+            #fff 0%,
+            #fff calc-percent(385, 1440),
+            #f9f9f9 calc-percent(385, 1440),
+            #f9f9f9 100%
+        );
+        width: calc(1200px + #{outside-inner-width(pc)});
+        padding: 57px outside-inner-width(pc) 187px 29px;
+        margin: 0 0 0 outside-inner-width(pc);
+    }
+    &__category {
+        font-weight: bold;
+        letter-spacing: 0.07em;
+        padding-right: 120px;
+        &:not(:last-of-type) {
+            margin-bottom: 107px;
+        }
+    }
+    &__category-name {
+        font-size: 30px;
+        font-weight: bold;
+        color: #fff;
+        line-height: calc(44 / 30);
+        background-color: $primary-color;
+        width: 389px;
+        padding: 18px 0;
+        margin-bottom: 22px;
+        box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+        @include flex-center;
+    }
+    &__item {
+        padding: 0 27px 0 15px;
+        border-bottom: 1px solid #808080;
+        cursor: pointer;
+        &:hover {
+            background-color: $primary-color;
+            transition: 0.3s;
+            .service__name {
+                color: #fff;
+                &::before,
+                &::after {
+                    background-color: #fff;
+                }
+            }
+        }
+        &.active {
+            &:hover {
+                background-color: #fff;
+                .service__name {
+                    color: $primary-color;
+                    &::before,
+                    &::after {
+                        background-color: #000;
+                        transition: 0.3s;
+                    }
+                    &::before {
+                        transform: rotate(180deg);
+                    }
+                    &::after {
+                        transform: rotate(540deg);
+                    }
+                }
+            }
+            .service__detail {
+                display: block;
+            }
+        }
+    }
+    &__name {
+        font-size: 24px;
+        line-height: calc(35 / 24);
+        color: $primary-color;
+        padding: 2.12em 0;
+        position: relative;
+        &::before,
+        &::after {
+            content: "";
+            width: 60px;
+            height: 2px;
+            background-color: #000;
+            transition: 0.3s;
+            position: absolute;
+            top: 50%;
+            right: 0;
+        }
+        &::before {
+            transform: translateY(-50%);
+        }
+        &::after {
+            transform: translateY(-50%) rotate(90deg);
+        }
+    }
+    &__detail {
+        padding-bottom: 60px;
+        display: none;
+    }
+    &__to-plans {
+        margin-top: -97px;
+    }
 }
+// /.service
