@@ -9,7 +9,7 @@ a {
 
 body {
   font-family: "Noto Sans CJK JP", sans-serif;
-  font-weight: 400;
+  font-weight: normal;
   font-size: 16px;
   color: #333333;
   line-height: calc(30 / 16);
@@ -837,5 +837,114 @@ body {
 
 .service__to-plans {
   margin-top: -97px;
+}
+
+.flow {
+  padding: 105px 0 137px 0;
+}
+
+.flow__title {
+  margin-bottom: 129px;
+}
+
+.flow__item {
+  color: #333333;
+  background-color: #fff;
+  width: 1000px;
+  height: 186px;
+  padding: 30px 34px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.flow__item:not(:last-of-type) {
+  margin-bottom: 127px;
+}
+
+.flow__item:not(:last-of-type)::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 41px 23.5px 0 23.5px;
+  border-color: #ffffff transparent transparent transparent;
+  position: absolute;
+  bottom: -84px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.flow__name {
+  font-size: 30px;
+  font-weight: bold;
+  width: 426px;
+  border-right: 2px solid #234cb5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flow__name-number {
+  width: 84px;
+  height: 84px;
+  background: #f3f3f3;
+  border-radius: 50%;
+  margin-right: 28px;
+  -webkit-filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.16));
+          filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.16));
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flow__detail-area {
+  width: calc(100% - 426px);
+  padding-left: 58px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flow__detail {
+  width: 100%;
+  padding-left: 2em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[2];
+      grid-template-columns: repeat(2, auto);
+  row-gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flow__detail-item {
+  font-size: 20px;
+  line-height: 1.2;
+  list-style: decimal;
+  width: 100%;
+  padding-left: 0.5em;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
 }
 /*# sourceMappingURL=style.css.map */

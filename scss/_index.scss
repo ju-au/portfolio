@@ -282,3 +282,78 @@
     }
 }
 // /.service
+
+.flow {
+    // ローカル変数
+    $name-width: 426px;
+
+    padding: 105px 0 137px 0;
+    &__title {
+        margin-bottom: 129px;
+    }
+    &__item {
+        color: $letter-color;
+        background-color: #fff;
+        width: 1000px;
+        height: 186px;
+        padding: 30px 34px;
+        margin: 0 auto;
+        display: flex;
+        position: relative;
+        &:not(:last-of-type) {
+            margin-bottom: 127px;
+            &::after {
+                content: "";
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 41px 23.5px 0 23.5px;
+                border-color: #ffffff transparent transparent transparent;
+                position: absolute;
+                bottom: -84px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+    }
+    &__name {
+        font-size: 30px;
+        font-weight: bold;
+        width: $name-width;
+        border-right: 2px solid $primary-color;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+    &__name-number {
+        width: 84px;
+        height: 84px;
+        background: #f3f3f3;
+        border-radius: 50%;
+        margin-right: 28px;
+        filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.16));
+        @include flex-center;
+    }
+    &__detail-area {
+        width: calc(100% - #{$name-width});
+        padding-left: 58px;
+        display: flex;
+        align-items: center;
+    }
+    &__detail {
+        width: 100%;
+        padding-left: 2em;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        row-gap: 10px;
+        align-items: center;
+    }
+    &__detail-item {
+        font-size: 20px;
+        line-height: 1.2;
+        list-style: decimal;
+        width: 100%;
+        padding-left: 0.5em;
+        align-self: start;
+    }
+}

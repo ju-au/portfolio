@@ -203,4 +203,66 @@
 <!-- /.service -->
 
 
+
+
+
+<section class="flow section-blue">
+    <div class="inner">
+        <h3 class="section-title flow__title">制作の流れ<br><span>(Webサイト制作プランの場合)</span></h3>
+        <dl class="flow__item-area">
+            <div class="flow__item">
+                <dt class="flow__name"><span class="flow__name-number"></span>お申込み</dt>
+                <dd class="flow__detail-area">
+                    <ol class="flow__detail">
+                        <li class="flow__detail-item">お問い合わせ</li>
+                        <li class="flow__detail-item">ヒアリング</li>
+                        <li class="flow__detail-item">ご提案、お見積り</li>
+                        <li class="flow__detail-item">契約書締結</li>
+                        <li class="flow__detail-item">着手金お支払い</li>
+                    </ol>
+                </dd>
+            </div>
+            <!-- /.flow__item -->
+            <div class="flow__item">
+                <dt class="flow__name"><span class="flow__name-number"></span>制作開始</dt>
+                <dd class="flow__detail-area">
+                    <ol class="flow__detail">
+                        <li class="flow__detail-item">デザイン</li>
+                        <li class="flow__detail-item">素材のご用意</li>
+                        <li class="flow__detail-item">サイト構築</li>
+                        <li class="flow__detail-item">動作確認、修正</li>
+                        <li class="flow__detail-item">サーバーご契約</li>
+                    </ol>
+                </dd>
+            </div>
+            <!-- /.flow__item -->
+            <div class="flow__item">
+                <dt class="flow__name"><span class="flow__name-number"></span>サイト公開</dt>
+                <dd class="flow__detail-area">
+                    <ol class="flow__detail">
+                        <li class="flow__detail-item">お支払い</li>
+                        <li class="flow__detail-item">サーバーへアップロード</li>
+                    </ol>
+                </dd>
+            </div>
+            <!-- /.flow__item -->
+            <div class="flow__item">
+                <dt class="flow__name"><span class="flow__name-number"></span>アフターフォロー</dt>
+                <dd class="flow__detail-area">
+                    <ol class="flow__detail">
+                        <li class="flow__detail-item">不具合修正</li>
+                        <li class="flow__detail-item">メンテナンス<br>(オプション)</li>
+                        <li class="flow__detail-item">更新作業(オプション)</li>
+                    </ol>
+                </dd>
+            </div>
+            <!-- /.flow__item -->
+        </dl>
+        <!-- /.flow__item-area -->
+    </div>
+    <!-- /.inner -->
+</section>
+<!-- /.flow -->
+
+
 <?php get_footer(); ?>
