@@ -283,6 +283,111 @@
 }
 // /.service
 
+.works {
+    background-color: #f9f9f9;
+    padding: 57px 0 91px;
+    &__title {
+        margin-bottom: 136px;
+    }
+    &__slide {
+        margin-bottom: 44px;
+    }
+    .swiper-wrapper {
+        display: flex;
+        padding-bottom: calc(39px + 72px);
+        // ↑ calc(.works__item との margin + .swiper__button の height)
+    }
+    &__item {
+        background-color: #fff;
+        width: 540px !important;
+        padding: 35px 35px 51px 24px;
+        box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    }
+    &__thumbnail {
+        width: 100%;
+        height: 260px;
+        box-shadow: 0px 3px 18px rgba(0, 0, 0, 0.16);
+        margin-bottom: 41px;
+        @include flex-center;
+        object-fit: cover;
+        > * {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &__category {
+        font-size: 14px;
+        color: #fff;
+        line-height: calc(20 / 14);
+        background-color: $primary-color;
+        padding: 7px 13px;
+        margin: 0 14px 32px 0;
+        display: inline-block;
+    }
+    &__item-title {
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 25px;
+    }
+    &__data-item {
+        font-weight: bold;
+        letter-spacing: 0.07em;
+        display: grid;
+        grid-template-columns: 104px auto;
+        justify-content: start;
+        &:not(:last-of-type) {
+            margin-bottom: 14px;
+        }
+    }
+    &__data-item-body {
+        text-align-last: left;
+        margin-left: calc(30px + 17px);
+        position: relative;
+        &:after {
+            content: "";
+            width: 17px;
+            height: 1px;
+            background-color: #707070;
+            position: absolute;
+            top: 50%;
+            left: calc(-30px - 17px);
+            transform: translateY(-50%);
+        }
+    }
+    .swiper-pagination {
+        width: 933px;
+        margin-left: outside-inner-width(pc);
+        bottom: 26px !important;
+        &-bullet {
+            height: 2px;
+            border-radius: 0;
+            margin: 0 !important;
+        }
+    }
+    .swiper-button-next,
+    .swiper-button-prev {
+        color: #fff;
+        background-color: $primary-color;
+        width: 72px;
+        height: 72px;
+        border-radius: 50%;
+        top: unset;
+        bottom: 0;
+        &::after {
+            font-size: 22px;
+        }
+    }
+    $swiper-button-next-right: calc(#{outside-inner-width(pc)} + 29px);
+    .swiper-button-next {
+        right: $swiper-button-next-right;
+    }
+    .swiper-button-prev {
+        left: unset;
+        right: calc(#{$swiper-button-next-right} + 72px + 30px);
+    }
+}
+// /.works
+
 .flow {
     // ローカル変数
     $name-width: 426px;

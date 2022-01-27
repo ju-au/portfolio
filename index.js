@@ -8,3 +8,6 @@ topAccordion();
 
 import flowSerialNumber from './js/flowSerialNumber.js';
 flowSerialNumber();
+
+import worksSwiper from './js/worksSwiper.js';
+worksSwiper();

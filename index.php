@@ -203,7 +203,78 @@
 <!-- /.service -->
 
 
+<section class="works">
+    <h3 class="section-title works__title">制作実績</h3>
+    <div class="works__slide swiper">
+        <div class="swiper-wrapper">
+            <?php
+            $args = [
+                'post_type' => 'post',
+                'meta_key' => '投稿表示順',
+                'orderby' => ['meta_value_num' => 'ASC', 'date' => 'DECS'],
+            ];
+            $sub_query = new WP_Query($args);
+            if ($sub_query->have_posts()) :
+                while ($sub_query->have_posts()) :
+                    $sub_query->the_post();
+            ?>
+                    <div class="swiper-slide works__item">
+                        <a href="<?php home_url(); ?>/works#<?php echo $post->post_name; ?>" class="works__link">
+                            <figure class="works__thumbnail">
+                                <?php
+                                if (has_post_thumbnail()) {
+                                    the_post_thumbnail('large');
+                                } else {
+                                    echo '<p>画像がありません</p>';
+                                };
+                                ?>
+                            </figure>
+                            <?php
+                            $categories = get_the_category();
+                            if ($categories) {
+                                foreach ($categories as $category) {
+                                    echo '<span class="works__category">' . $category->cat_name . '</span>';
+                                };
+                            };
+                            ?>
+                            <h4 class="works__item-title"><?php echo get_the_title(); ?></h4>
+                            <dl class="works__data">
+                                <div class="works__data-item">
+                                    <dt class="works__data-item-title">制作期間</dt>
+                                    <dl class="works__data-item-body"><?php echo get_post_meta(get_the_id(), '制作期間', true) ?></dl>
+                                </div>
+                                <div class="works__data-item">
+                                    <dt class="works__data-item-title">ページ数</dt>
+                                    <dl class="works__data-item-body"><?php echo get_post_meta(get_the_id(), 'ページ数', true) ?></dl>
+                                </div>
+                                <div class="works__data-item">
+                                    <dt class="works__data-item-title">利用技術</dt>
+                                    <dl class="works__data-item-body"><?php echo get_post_meta(get_the_id(), '利用技術', true) ?></dl>
+                                </div>
+                                <div class="works__data-item">
+                                    <dt class="works__data-item-title">URL</dt>
+                                    <dl class="works__data-item-body"><a href="<?php echo get_post_meta(get_the_id(), 'URL', true) ?>">こちらをクリック</a></dl>
+                                </div>
+                            </dl>
+                            <!-- /.works__data -->
+                        </a>
+                        <!-- /.works__link -->
+                    </div>
+                    <!-- /.swiper-slide .works__item -->
+            <?php endwhile;
+            endif;
+            wp_reset_postdata(); ?>
+        </div>
+        <!-- /.swiper-wrapper -->
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
 
+    </div>
+    <!-- /.works__slide -->
+    <a href="<?php home_url(); ?>/works" class="button works__to-work">制作事例を見る</a>
+</section>
+<!-- /.works -->
 
 
 <section class="flow section-blue">
