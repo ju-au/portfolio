@@ -283,7 +283,7 @@
 }
 // /.service
 
-.works {
+.home-works {
     background-color: #f9f9f9;
     padding: 57px 0 91px;
     &__title {
@@ -295,7 +295,7 @@
     .swiper-wrapper {
         display: flex;
         padding-bottom: calc(39px + 72px);
-        // ↑ calc(.works__item との margin + .swiper__button の height)
+        // ↑ calc(.home-works__item との margin + .swiper__button の height)
     }
     &__item {
         background-color: #fff;
@@ -386,7 +386,7 @@
         right: calc(#{$swiper-button-next-right} + 72px + 30px);
     }
 }
-// /.works
+// /.home-works
 
 .flow {
     // ローカル変数

@@ -203,9 +203,9 @@
 <!-- /.service -->
 
 
-<section class="works">
-    <h3 class="section-title works__title">制作実績</h3>
-    <div class="works__slide swiper">
+<section class="home-works">
+    <h3 class="section-title home-works__title">制作実績</h3>
+    <div class="home-works__slide swiper">
         <div class="swiper-wrapper">
             <?php
             $args = [
@@ -218,9 +218,9 @@
                 while ($sub_query->have_posts()) :
                     $sub_query->the_post();
             ?>
-                    <div class="swiper-slide works__item">
-                        <a href="<?php home_url(); ?>/works#<?php echo $post->post_name; ?>" class="works__link">
-                            <figure class="works__thumbnail">
+                    <div class="swiper-slide home-works__item">
+                        <a href="<?php home_url(); ?>/home-works#<?php echo $post->post_name; ?>" class="home-works__link">
+                            <figure class="home-works__thumbnail">
                                 <?php
                                 if (has_post_thumbnail()) {
                                     the_post_thumbnail('large');
@@ -233,34 +233,34 @@
                             $categories = get_the_category();
                             if ($categories) {
                                 foreach ($categories as $category) {
-                                    echo '<span class="works__category">' . $category->cat_name . '</span>';
+                                    echo '<span class="home-works__category">' . $category->cat_name . '</span>';
                                 };
                             };
                             ?>
-                            <h4 class="works__item-title"><?php echo get_the_title(); ?></h4>
-                            <dl class="works__data">
-                                <div class="works__data-item">
-                                    <dt class="works__data-item-title">制作期間</dt>
-                                    <dl class="works__data-item-body"><?php echo get_post_meta(get_the_id(), '制作期間', true) ?></dl>
+                            <h4 class="home-works__item-title"><?php echo get_the_title(); ?></h4>
+                            <dl class="home-works__data">
+                                <div class="home-works__data-item">
+                                    <dt class="home-works__data-item-title">制作期間</dt>
+                                    <dl class="home-works__data-item-body"><?php echo get_post_meta(get_the_id(), '制作期間', true) ?></dl>
                                 </div>
-                                <div class="works__data-item">
-                                    <dt class="works__data-item-title">ページ数</dt>
-                                    <dl class="works__data-item-body"><?php echo get_post_meta(get_the_id(), 'ページ数', true) ?></dl>
+                                <div class="home-works__data-item">
+                                    <dt class="home-works__data-item-title">ページ数</dt>
+                                    <dl class="home-works__data-item-body"><?php echo get_post_meta(get_the_id(), 'ページ数', true) ?></dl>
                                 </div>
-                                <div class="works__data-item">
-                                    <dt class="works__data-item-title">利用技術</dt>
-                                    <dl class="works__data-item-body"><?php echo get_post_meta(get_the_id(), '利用技術', true) ?></dl>
+                                <div class="home-works__data-item">
+                                    <dt class="home-works__data-item-title">利用技術</dt>
+                                    <dl class="home-works__data-item-body"><?php echo get_post_meta(get_the_id(), '利用技術', true) ?></dl>
                                 </div>
-                                <div class="works__data-item">
-                                    <dt class="works__data-item-title">URL</dt>
-                                    <dl class="works__data-item-body"><a href="<?php echo get_post_meta(get_the_id(), 'URL', true) ?>">こちらをクリック</a></dl>
+                                <div class="home-works__data-item">
+                                    <dt class="home-works__data-item-title">URL</dt>
+                                    <dl class="home-works__data-item-body"><a href="<?php echo get_post_meta(get_the_id(), 'URL', true) ?>">こちらをクリック</a></dl>
                                 </div>
                             </dl>
-                            <!-- /.works__data -->
+                            <!-- /.home-works__data -->
                         </a>
-                        <!-- /.works__link -->
+                        <!-- /.home-works__link -->
                     </div>
-                    <!-- /.swiper-slide .works__item -->
+                    <!-- /.swiper-slide .home-works__item -->
             <?php endwhile;
             endif;
             wp_reset_postdata(); ?>
@@ -271,10 +271,10 @@
         <div class="swiper-button-next"></div>
 
     </div>
-    <!-- /.works__slide -->
-    <a href="<?php home_url(); ?>/works" class="button works__to-work">制作事例を見る</a>
+    <!-- /.home-works__slide -->
+    <a href="<?php home_url(); ?>/home-works" class="button home-works__to-work">制作事例を見る</a>
 </section>
-<!-- /.works -->
+<!-- /.home-works -->
 
 
 <section class="flow section-blue">
