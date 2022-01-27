@@ -1,6 +1,6 @@
 export default function () {
-    if (!document.querySelector(".works__slide")) return;
-    let swiper = new Swiper(".works__slide", {
+    if (!document.querySelector(".home-works__slide")) return;
+    let swiper = new Swiper(".home-works__slide", {
         slidesPerView: 3,
         centeredSlides: true,
         spaceBetween: 42,
