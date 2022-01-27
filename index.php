@@ -241,19 +241,19 @@
                             <dl class="home-works__data">
                                 <div class="home-works__data-item">
                                     <dt class="home-works__data-item-title">制作期間</dt>
-                                    <dl class="home-works__data-item-body"><?php echo get_post_meta(get_the_id(), '制作期間', true) ?></dl>
+                                    <dl class="home-works__data-item-body"><?php echo get_post_meta(get_the_id(), '制作期間', true); ?></dl>
                                 </div>
                                 <div class="home-works__data-item">
                                     <dt class="home-works__data-item-title">ページ数</dt>
-                                    <dl class="home-works__data-item-body"><?php echo get_post_meta(get_the_id(), 'ページ数', true) ?></dl>
+                                    <dl class="home-works__data-item-body"><?php echo get_post_meta(get_the_id(), 'ページ数', true); ?></dl>
                                 </div>
                                 <div class="home-works__data-item">
                                     <dt class="home-works__data-item-title">利用技術</dt>
-                                    <dl class="home-works__data-item-body"><?php echo get_post_meta(get_the_id(), '利用技術', true) ?></dl>
+                                    <dl class="home-works__data-item-body"><?php echo get_post_meta(get_the_id(), '利用技術', true); ?></dl>
                                 </div>
                                 <div class="home-works__data-item">
                                     <dt class="home-works__data-item-title">URL</dt>
-                                    <dl class="home-works__data-item-body"><a href="<?php echo get_post_meta(get_the_id(), 'URL', true) ?>">こちらをクリック</a></dl>
+                                    <dl class="home-works__data-item-body"><a href="<?php echo get_post_meta(get_the_id(), 'URL', true); ?>">こちらをクリック</a></dl>
                                 </div>
                             </dl>
                             <!-- /.home-works__data -->
