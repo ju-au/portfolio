@@ -272,7 +272,7 @@
 
     </div>
     <!-- /.home-works__slide -->
-    <a href="<?php home_url(); ?>/home-works" class="button home-works__to-work">制作事例を見る</a>
+    <a href="<?php home_url(); ?>/works" class="button home-works__to-work">制作事例を見る</a>
 </section>
 <!-- /.home-works -->
 
