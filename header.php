@@ -16,10 +16,10 @@
 
 <body <?php body_class(); ?>>
   <header class="header">
-    <div class="header__logo">
+    <h1 class="header__logo">
       <a href="<?php echo home_url(); ?>">
       </a>
-    </div>
+    </h1>
     <!-- ハンバーガーメニュー用 -->
     <input type="checkbox" name="res" id="burger__switch" class="burger__switch">
     <label for="burger__switch" id="burger__btn" class="burger__btn">
