@@ -219,7 +219,7 @@
                     $sub_query->the_post();
             ?>
                     <div class="swiper-slide home-works__item">
-                        <a href="<?php home_url(); ?>/home-works#<?php echo $post->post_name; ?>" class="home-works__link">
+                        <a href="<?php home_url(); ?>/works#<?php echo $post->post_name; ?>" class="home-works__link">
                             <figure class="home-works__thumbnail">
                                 <?php
                                 if (has_post_thumbnail()) {
