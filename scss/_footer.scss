@@ -3,7 +3,7 @@
     background-color: #0c1b67;
     &__enquiry {
         background: no-repeat center/cover;
-        padding: 47px 0 53px;
+        padding: 40px 0 51px;
         margin-bottom: 32px;
         position: relative;
         &::before {
@@ -26,9 +26,9 @@
         z-index: 1;
     }
     &__title {
-        font-size: 53px;
+        font-size: 35px;
         font-weight: bold;
-        margin-bottom: 18px;
+        margin-bottom: 8px;
     }
     &__copy {
         margin-bottom: 27px;
@@ -37,14 +37,14 @@
         color: $letter-color;
         font-size: 20px;
         width: 1050px;
-        padding: 59px 0;
+        padding: 58px 0;
         &::before,
         &::after {
             right: 62px;
         }
     }
     &__nav {
-        margin-bottom: 45px;
+        margin-bottom: 36px;
     }
     &__navUl {
         display: grid;
