@@ -1,0 +1,129 @@
+.introduction {
+    padding: 102px 0 87px;
+    &__title {
+        margin-bottom: 40px;
+    }
+    &__container {
+        padding: 27px 40px 42px 20px;
+        box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+        display: grid;
+        grid-template: repeat(5, auto) / repeat(2, autol);
+        grid-template-areas:
+            "job img"
+            "name img"
+            "text img"
+            "title img"
+            "cert img";
+        column-gap: 49px;
+    }
+    &__job-title,
+    &__name {
+        font-weight: bold;
+        color: $tertiary-color;
+    }
+    &__job-title {
+        font-size: 14px;
+        line-height: calc(20 / 14);
+        grid-area: job;
+    }
+    &__name {
+        font-size: 30px;
+        line-height: calc(44 / 30);
+        margin-bottom: 14px;
+        grid-area: name;
+    }
+    &__text {
+        margin-bottom: 18px;
+        grid-area: text;
+    }
+    &__image {
+        width: 455px;
+        grid-area: img;
+        @include aspect-ratio-parent {
+            padding-top: calc-percent(388,455);
+        }
+        img {
+            @include aspect-ratio-child;
+        }
+    }
+}
+// .introduction
+.certification {
+    &__title {
+        font-size: 20px;
+        font-weight: bold;
+        grid-area: title;
+        display: flex;
+        align-items: center;
+        &::before {
+            content: "";
+            background-color: $primary-color;
+            width: 18px;
+            height: 1px;
+            margin-right: 7px;
+        }
+    }
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        justify-content: start;
+        column-gap: 45px;
+        row-gap: 15px;
+        grid-area: cert;
+    }
+}
+// .certification
+
+.history {
+    padding-bottom: 111px;
+    &__title {
+        margin-bottom: 58px;
+    }
+    &__table {
+        padding-right: 24px;
+        display: grid;
+        grid-template-columns: 178px 1fr 563px;
+        row-gap: 39px;
+    }
+    &__year, &__heading {
+        font-size: 20px;
+    }
+}
+// .history
+
+.skills {
+    padding: 69px 0 168px;
+    &__title {
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 96px;
+    }
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        &:not(:last-of-type) {
+            margin-bottom: 157px;
+        }
+    }
+    &__icon {
+        background-color: #fff;
+        width: 350px;
+        height: 350px;
+        border-radius: 50%;
+        margin-top: 50px;
+        @include flex-center;
+        img {
+            width: calc-percent(120,350);
+        }
+    }
+    &__text-area {
+        width: 680px;
+        padding-right: 40px;
+    }
+    &__lang {
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 44px;
+    }
+}
