@@ -25,7 +25,7 @@
                 <span class="certification__item">IELTS 6.0</span>
             </div>
             <!-- /.certification-container -->
-            <figure class="introduction__image"><img src="<?php echo get_template_directory_uri(); ?>/images/about/introduction-image.jpg" alt=""></figure>
+            <figure class="introduction__image"><img src="<?php echo get_template_directory_uri(); ?>/dist/images/about/introduction-image.jpg" alt=""></figure>
         </div>
         <!-- /.introduction__container -->
     </div>
@@ -68,21 +68,21 @@
         <h3 class="skills__title">対応範囲・スキル感について</h3>
         <ul class="skills__list">
             <li class="skills__item">
-                <figure class="skills__icon"><img src="<?php echo get_template_directory_uri(); ?>/images/about/html.png" alt=""></figure>
+                <figure class="skills__icon"><img src="<?php echo get_template_directory_uri(); ?>/dist/images/about/html.png" alt=""></figure>
                 <div class="skills__text-area">
                     <h4 class="skills__lang">HTML5(マークアップ)</h4>
                     <p class="skills__body">ココにはHTML(マークアップ)をしていく上で、気を付けている事や記述方法などを具体的に書いて下さい。ココにはHTML(マークアップ)をしていく上で、気を付けている事や記述方法などを具体的に書いて下さい。ココにはHTML(マークアップ)をしていく上で、気を付けている事や記述方法などを具体的に書いて下さい。ココにはHTML(マークアップ)をしていく上で、気を付けている事や記述方法などを具体的に書いて下さい。ココにはHTML(マークアップ)をしていく上で、気を付けている事や記述方法などを具体的に書いて下さい。ココにはHTML(マークアップ)をしていく上で、気を付けている事や記述方法などを具体的に書いて下さい。</p>
                 </div>
             </li>
             <li class="skills__item">
-                <figure class="skills__icon"><img src="<?php echo get_template_directory_uri(); ?>/images/about/css.png" alt=""></figure>
+                <figure class="skills__icon"><img src="<?php echo get_template_directory_uri(); ?>/dist/images/about/css.png" alt=""></figure>
                 <div class="skills__text-area">
                     <h4 class="skills__lang">CSS(Lib Sass / Dart Sass)</h4>
                     <p class="skills__body">ココにはCSSを記述していく上で、気を付けている事や記述方法などを具体的に書いて下さい。ココにはCSSを記述していく上で、気を付けている事や記述方法などを具体的に書いて下さい。ココにはCSSを記述していく上で、気を付けている事や記述方法などを具体的に書いて下さい。ココにはCSSを記述していく上で、気を付けている事や記述方法などを具体的に書いて下さい。ココにはCSSを記述していく上で、気を付けている事や記述方法などを具体的に書いて下さい。ココにはCSSを記述していく上で、気を付けている事や記述方法などを具体的に書いて下さい。ココにはCSSを記述していく上で、気を付けている事や記述方法などを具体的に書いて下さい。ココにはCSSを記述していく上で、気を付けている事や記述方法などを具体的に書いて下さい。</p>
                 </div>
             </li>
             <li class="skills__item">
-                <figure class="skills__icon"><img src="<?php echo get_template_directory_uri(); ?>/images/about/js.png" alt=""></figure>
+                <figure class="skills__icon"><img src="<?php echo get_template_directory_uri(); ?>/dist/images/about/js.png" alt=""></figure>
                 <div class="skills__text-area">
                     <h4 class="skills__lang">JavaScript</h4>
                     <p class="skills__body">ココにはHTML(マークアップ)をしていく上で、気を付けている事や記述方法などを
@@ -90,7 +90,7 @@
                 </div>
             </li>
             <li class="skills__item">
-                <figure class="skills__icon"><img src="<?php echo get_template_directory_uri(); ?>/images/about/php.png" alt=""></figure>
+                <figure class="skills__icon"><img src="<?php echo get_template_directory_uri(); ?>/dist/images/about/php.png" alt=""></figure>
                 <div class="skills__text-area">
                     <h4 class="skills__lang">PHP(WordPress)</h4>
                     <p class="skills__body">ココにはPHP・WordPressで行える範囲、気を付けている事や記述方法などを具体的に書いて下さい。ココにはPHP・WordPressで行える範囲、気を付けている事や記述方法などを具体的に書いて下さい。ココにはPHP・WordPressで行える範囲、気を付けている事や記述方法などを具体的に書いて下さい。ココにはPHP・WordPressで行える範囲、気を付けている事や記述方法などを具体的に書いて下さい。ココにはPHP・WordPressで行える範囲、気を付けている事や記述方法などを具体的に書いて下さい。ココにはPHP・WordPressで行える範囲、気を付けている事や記述方法などを具体的に書いて下さい。ココにはPHP・WordPressで行える範囲、気を付けている事や記述方法などを具体的に書いて下さい。ココにはPHP・WordPressで行える範囲、気を付けている事や記述方法などを具体的に書いて下さい。</p>

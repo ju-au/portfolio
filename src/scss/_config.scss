@@ -77,11 +77,11 @@ $break-points: (
 }
 
 @function calc-vw($content-width, $display-width: 1440) {
-  @return $content-width / $display-width * 100vw;
+  @return calc($content-width / $display-width * 100vw);
 }
 
 @function calc-percent($item-size, $parent-size) {
-  @return $item-size / $parent-size * 100%;
+  @return calc($item-size / $parent-size * 100%);
 }
 
 li {
@@ -183,6 +183,7 @@ body {
   &--plans {
     font-size: 40px;
     line-height: calc(58 / 40);
+    margin-bottom: 34px;
   }
   &::after {
     content: "";

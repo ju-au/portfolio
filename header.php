@@ -42,10 +42,10 @@
 
   <nav class="fixed-link">
     <a href="https://twitter.com/junyaUeda" class="fixed-link__item fixed-link__item--twitter">
-      <img src="<?php echo get_template_directory_uri(); ?>/images/twitter-icon.png" alt="ツイッターのアイコン">
+      <img src="<?php echo get_template_directory_uri(); ?>/dist/images/twitter-icon.png" alt="ツイッターのアイコン">
     </a>
     <a href="<?php home_url(); ?>/enquiry" class="fixed-link__item fixed-link__item--enquiry">
-      <img src="<?php echo get_template_directory_uri(); ?>/images/mail-icon.png" alt="お問い合わせのアイコン">
+      <img src="<?php echo get_template_directory_uri(); ?>/dist/images/mail-icon.png" alt="お問い合わせのアイコン">
     </a>
   </nav>
 

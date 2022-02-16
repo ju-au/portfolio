@@ -13,22 +13,22 @@
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <picture>
-                        <source srcset="<?php echo get_template_directory_uri(); ?>/images/index/top1.webp" type="image/webp">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/index/top1.jpg">
+                        <source srcset="<?php echo get_template_directory_uri(); ?>/dist/images/index/top1.webp" type="image/webp">
+                        <img src="<?php echo get_template_directory_uri(); ?>/dist/images/index/top1.jpg">
                     </picture>
                 </div>
                 <!-- /.swiper-slide -->
                 <div class="swiper-slide">
                     <picture>
-                        <source srcset="<?php echo get_template_directory_uri(); ?>/images/index/top2.webp" type="image/webp">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/index/top2.jpg">
+                        <source srcset="<?php echo get_template_directory_uri(); ?>/dist/images/index/top2.webp" type="image/webp">
+                        <img src="<?php echo get_template_directory_uri(); ?>/dist/images/index/top2.jpg">
                     </picture>
                 </div>
                 <!-- /.swiper-slide -->
                 <div class="swiper-slide">
                     <picture>
-                        <source srcset="<?php echo get_template_directory_uri(); ?>/images/index/top3.webp" type="image/webp">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/index/top3.jpg">
+                        <source srcset="<?php echo get_template_directory_uri(); ?>/dist/images/index/top3.webp" type="image/webp">
+                        <img src="<?php echo get_template_directory_uri(); ?>/dist/images/index/top3.jpg">
                     </picture>
                 </div>
                 <!-- /.swiper-slide -->
@@ -94,28 +94,28 @@
             <ul class="reasons__card-ul">
                 <li class="reasons__card">
                     <figure class="reasons__card-icon">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/index/reasons1.png" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/dist/images/index/reasons1.png" alt="">
                     </figure>
                     <h4 class="reasons__card-title">マーケティングとSEO対策</h4>
                     <p class="reasons__card-body">マーケティングの手法とSEO対策（検索エンジン対策）を用いることで、集客に強いホームページを作成いたします。合わせてアクセス解析ツールの設置も行います。客層や顧客の反応をモニターし、改善点を洗い出すことが出来ます。</p>
                 </li>
                 <li class="reasons__card">
                     <figure class="reasons__card-icon">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/index/reasons2.png" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/dist/images/index/reasons2.png" alt="">
                     </figure>
                     <h4 class="reasons__card-title">誠実な聞き取りと分かりやすい説明</h4>
                     <p class="reasons__card-body">聞き上手・説明上手・誠実。この三点が私の強みです。目的、目標、こだわりを聞き取り、それに最適なサイトをご提案いたします。ITに疎くても大丈夫！難しい言葉を使わず、明確にイメージできるようにご説明いたします。何よりすべてに誠実に対応させていただきます。納期の厳守、クオリティの担保はもちろんのこと、常にあなたのビジネスにとって、最適なご提案をさせて頂きます。</p>
                 </li>
                 <li class="reasons__card">
                     <figure class="reasons__card-icon">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/index/reasons3.png" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/dist/images/index/reasons3.png" alt="">
                     </figure>
                     <h4 class="reasons__card-title">土日祝日・深夜・お急ぎ対応</h4>
                     <p class="reasons__card-body">平日昼間に時間が取れなくても大丈夫！お客様のご都合のいい時間に合わせてミーティング等を設定することが出来ます。また、お急ぎの場合には休日返上での作業も可能ですので、ぜひともご要望をお聞かせください。</p>
                 </li>
                 <li class="reasons__card">
                     <figure class="reasons__card-icon">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/index/reasons4.png" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/dist/images/index/reasons4.png" alt="">
                     </figure>
                     <h4 class="reasons__card-title">１つの窓口でストレスフリー</h4>
                     <p class="reasons__card-body">個人で制作しているため、複数の担当者による説明の齟齬などがありません。企画段階から最後の納品まで、一貫してあなたの意志を正確に反映させることが出来ます。また、余計なコミュニケーションコストがかからないため、作業のスピードの向上、迅速で細やかな対応が可能、といったメリットがあります。</p>

@@ -3,7 +3,7 @@
 </main>
 
 <footer class="footer">
-    <div class="footer__enquiry" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/footer.webp');">
+    <div class="footer__enquiry" style="background-image: url('<?php echo get_template_directory_uri(); ?>/dist/images/footer.webp');">
         <h3 class="footer__title">お問い合わせ</h3>
         <p class="footer__copy">
             お見積りやご相談を受けてつけています。<br>
@@ -27,8 +27,8 @@
 </footer>
 
 
-<script src="<?php echo get_template_directory_uri(); ?>/js/plugins/swiper/swiper-bundle.min.js"></script>
-<script type="module" src="<?php echo get_template_directory_uri(); ?>/index.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/dist/js/plugins/swiper/swiper-bundle.min.js"></script>
+<script type="module" src="<?php echo get_template_directory_uri(); ?>/dist/js/bundle.min.js"></script>
 
 <?php wp_footer(); ?>
 

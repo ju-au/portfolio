@@ -16,7 +16,6 @@ export default function () {
     const dots = document.querySelectorAll(".swiper-pagination-bullet");
     const dotsWidth = (100 / dots.length) + "%";
     dots.forEach(dot => {
-        console.log(dot);
         dot.style.width = dotsWidth;
     });
 }

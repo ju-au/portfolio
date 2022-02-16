@@ -1,20 +1,20 @@
 // 共通スタイル
-@import "./scss/config";
-@import "./scss/header";
-@import "./scss/hamburger-menu";
-@import "./scss/footer";
+@import "./src/scss/config";
+@import "./src/scss/header";
+@import "./src/scss/hamburger-menu";
+@import "./src/scss/footer";
 
 // パーツ
-// @import "./scss/includes/";
+// @import "./src/scss/includes/";
 
 // indexページ
-@import "./scss/index";
+@import "./src/scss/index";
 
 // worksページ
-@import "./scss/works";
+@import "./src/scss/works";
 
-// worksページ
-@import "./scss/about";
+// aboutページ
+@import "./src/scss/about";
 
-// worksページ
-@import "./scss/plans";
+// plansページ
+@import "./src/scss/plans";
