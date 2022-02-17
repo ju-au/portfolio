@@ -180,14 +180,15 @@ body {
     font-size: 30px;
     line-height: calc(44 / 30);
   }
-  &--plans {
+  &--plans,
+  &--enquiry {
     font-size: 40px;
     line-height: calc(58 / 40);
     margin-bottom: 34px;
   }
   &::after {
     content: "";
-    width: calc-percent(525,1200);
+    width: calc-percent(525, 1200);
     border-bottom: 1px solid $primary-color;
     position: absolute;
     bottom: -1px;

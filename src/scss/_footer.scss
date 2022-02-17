@@ -1,10 +1,8 @@
 .footer {
     color: #fff;
-    background-color: #0c1b67;
     &__enquiry {
         background: no-repeat center/cover;
         padding: 40px 0 51px;
-        margin-bottom: 32px;
         position: relative;
         &::before {
             content: "";
@@ -44,9 +42,11 @@
         }
     }
     &__nav {
-        margin-bottom: 36px;
+        background-color: #0c1b67;
+        padding-top: 32px;
     }
     &__navUl {
+        margin-bottom: 36px;
         display: grid;
         grid-template-columns: repeat(5, auto);
         justify-content: center;
