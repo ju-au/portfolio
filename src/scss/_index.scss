@@ -227,6 +227,14 @@
             }
         }
         &.active {
+            .service__name {
+                &::before {
+                    transform: rotate(180deg);
+                }
+                &::after {
+                    transform: rotate(540deg);
+                }
+            }
             &:hover {
                 background-color: #fff;
                 .service__name {
@@ -235,12 +243,6 @@
                     &::after {
                         background-color: #000;
                         transition: 0.3s;
-                    }
-                    &::before {
-                        transform: rotate(180deg);
-                    }
-                    &::after {
-                        transform: rotate(540deg);
                     }
                 }
             }
