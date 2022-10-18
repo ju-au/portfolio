@@ -1,11 +1,20 @@
 .header {
     font-size: 18px;
     width: 100%;
+    background-color: #fff;
     height: $header-height;
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.07);
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    &.is-fixed {
+        position: fixed;
+        animation: scroll-up-header forwards ease 0.2s;
+    }
     &__logo {
         background-color: #e8e8e8;
         width: 120px;

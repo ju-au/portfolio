@@ -100,8 +100,9 @@ body {
   line-height: calc(30 / 16);
   font-style: normal;
   width: 100vw;
+  padding-top: $header-height;
+  position: relative;
   overflow-x: hidden;
-  position: absolute;
 }
 
 .section-blue {
@@ -281,5 +282,16 @@ body {
 .is-hidden-sp {
   @include sp {
     display: none !important;
+  }
+}
+
+@keyframes scroll-up-header {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
   }
 }

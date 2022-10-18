@@ -1,6 +1,7 @@
 'use strict'
 
-
+import scrollUpHeader from './scrollUpHeader.js';
+scrollUpHeader();
 
 import topSwiper from './topSwiper.js';
 topSwiper();
